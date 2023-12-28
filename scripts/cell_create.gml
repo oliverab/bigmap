@@ -47,13 +47,15 @@ if temp>0
   temp4.image_index=temp;
   temp4.image_speed=0;
   temp4.image_blend=instance_nearest(tx2,ty2,o_colour).colour;
+  temp4=instance_create(tx,ty,wall_dyn)
+  temp4.a=temp;
+  temp4.b=temp2;
   var shape=temp;
   var decor=temp2;
   var surf=argument2;
-/*
   if global.tile_sprite[shape,decor]>0
   {
-    temp4.sprite_index=s_wall_white;
+    temp4.sprite_index=global.tile_sprite[shape,decor];
   }
   else
   {
@@ -65,5 +67,4 @@ if temp>0
     global.tile_sprite[shape,decor]=sprite_create_from_surface(surf,0,0,global.cell_size+1,global.cell_size+1,false,false,0,0);
     temp4.sprite_index= global.tile_sprite[shape,decor];
   }
-*/
 }
