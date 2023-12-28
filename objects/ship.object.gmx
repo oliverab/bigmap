@@ -37,13 +37,13 @@ image_single=image_number*(facing/360);
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>205</id>
+        <id>541</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_set_sprite</functionname>
+        <functionname>action_sprite_set</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -55,7 +55,11 @@ image_single=image_number*(facing/360);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>image_single</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -249,13 +253,13 @@ if not place_free(x,y)
       </action>
       <action>
         <libid>1</libid>
-        <id>205</id>
+        <id>541</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_set_sprite</functionname>
+        <functionname>action_sprite_set</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -267,7 +271,11 @@ if not place_free(x,y)
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>image_single</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
