@@ -25,7 +25,6 @@
     <sprite>sprites\s_wall2</sprite>
     <sprite>sprites\s_wall_white</sprite>
     <sprite>sprites\s_map</sprite>
-    <sprite>sprites\sprite25</sprite>
     <sprite>sprites\pointsprite</sprite>
   </sprites>
   <backgrounds name="background"/>
