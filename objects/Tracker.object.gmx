@@ -467,6 +467,10 @@
   draw_line(tx-10+view_xview,ty-10+view_yview,tx+10+view_xview,ty+10+view_yview);
   draw_line(tx-10+view_xview,ty+10+view_yview,tx+10+view_xview,ty-10+view_yview);
 }
+// global.cell_size
+draw_set_colour(c_white);
+draw_line((x-control1.os_x)*global.cell_size-dx*10-dy*10,(y-control1.os_y)*global.cell_size-dy*10+dx*10,(x-control1.os_x)*global.cell_size,(y-control1.os_y)*global.cell_size);
+draw_line((x-control1.os_x)*global.cell_size,(y-control1.os_y)*global.cell_size,(x-control1.os_x)*global.cell_size-dx*10+dy*10,(y-control1.os_y)*global.cell_size-dy*10-dx*10);
 
 </string>
           </argument>
